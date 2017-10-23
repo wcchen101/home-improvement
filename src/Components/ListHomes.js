@@ -10,7 +10,6 @@ class ListHomes extends React.Component {
     super(props)
     this.state ={
       homes: [],
-
     }
   }
   componentWillMount() {
