@@ -1,3 +1,55 @@
+* {
+    box-sizing: border-box;
+}
 h1 {
   color: #00008B;
+}
+.list-homes-content {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.list-home-image {
+  width: 300px;
+  height: 250px;
+  margin: 5px 5px;
+
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  overflow: hidden;
+  z-index: -1;
+}
+.heart-shape{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: rgba(250,184,66, 1);
+}
+.heart-shape:before,
+.heart-shape:after{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(250,184,66, 1);
+}
+.heart-shape:before{
+  bottom: 0px;
+  left: -100px;
+}
+.heart-shape:after{
+  top: -100px;
+  right: 0px;
 }
